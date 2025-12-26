@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Tracker</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Internship Tracker</h1>
+
+      <section class="card">
+        <h2>Add application</h2>
+        <form id="appForm">
+          <div class="row">
+            <label>
+              Company
+              <input id="company" required />
+            </label>
+
+            <label>
+              Role
+              <input id="role" required />
+            </label>
+          </div>
+
+          <div class="row">
+            <label>
+              Link
+              <input id="link" placeholder="https://..." />
+            </label>
+
+            <label>
+              Status
+              <select id="status">
+                <option>Applied</option>
+                <option>OA</option>
+                <option>Interview</option>
+                <option>Offer</option>
+                <option>Rejected</option>
+              </select>
+            </label>
+          </div>
+
+          <button type="submit">Add</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
+            <h2 style="margin:0;">Applications</h2>
+
+            <label style="min-width:220px;">
+                Filter
+                <select id="filterStatus">
+                    <option value="All">All</option>
+                    <option value="Applied">Applied</option>
+                    <option value="OA">OA</option>
+                    <option value="Interview">Interview</option>
+                    <option value="Offer">Offer</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+            </label>
+        </div>
+
+  <div id="summary" style="margin-top:10px; opacity:.85;"></div>
+  <div id="list" class="list" style="margin-top:10px;"></div>
+</section>
+
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
