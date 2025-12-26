@@ -2,6 +2,9 @@
 
 A simple full-stack web app to track internship applications (company, role, link, status). Built with **Node.js + Express** and **SQLite** for persistent storage, with a **vanilla HTML/CSS/JS** frontend.
 
+## Live Demo
+[https://YOUR_RENDER_URL_HERE](https://internship-tracker-gxiq.onrender.com/)
+
 ## Features
 - Add internship applications (company, role, link, status)
 - View all applications
